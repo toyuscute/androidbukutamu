@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="29dp"
+                android:gravity="center_horizontal"
+                android:text="Dinas Perpustakaan dan Kearsipan\nKota Medan "
+                android:textColor="#3b3b3b"
+                android:textSize="20sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/textKeterangan"
+                android:layout_width="278dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="37dp"
+                android:gravity="center_horizontal"
+                android:text="Tunjukkan kode ini ke petugas atau gunakan kode ini sesuai petunjuk penggunaan."
+                android:textColor="#333333"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+
+
+            <ImageView
+                android:id="@+id/imageViewQR"
+                android:layout_width="285dp"
+                android:layout_height="285dp"
+                android:src="@drawable/img"
+                android:scaleType="centerCrop" />
+
+            <Button
+                android:id="@+id/refresh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="@color/mainColor"
+                android:padding="15dp"
+                android:text="Refresh"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
